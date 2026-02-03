@@ -1,31 +1,37 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f6f8;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: column; 
-  align-items: center;    
+  flex-direction: column;
+  align-items: center;
   min-height: 100vh;
 }
 
 
-form#astroForm {
-  background-color: #ffffff;
-  padding: 30px 40px;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  width: 350px;
-  margin-top: 20px;
+h2 {
+  color: #ffffff;
+  margin-top: 30px;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 
 
-h2 {
-  color: #1a1a1a;
-  text-align: center;  
-  margin-bottom: 25px;
-  width: 100%;          
+form#astroForm {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 30px 35px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  width: 380px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+form#astroForm:hover {
+  transform: translateY(-5px);
 }
 
 
@@ -33,37 +39,43 @@ input, select {
   display: block;
   width: 100%;
   padding: 12px 15px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
+  margin: 12px 0;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 15px;
+  background: #f9fafb;
   transition: all 0.3s ease;
 }
 
 input:focus, select:focus {
-  border-color: #4a90e2;
-  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+  border-color: #2563eb;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.4);
   outline: none;
+  background: #ffffff;
 }
 
 
 button {
   width: 100%;
-  padding: 12px;
-  background-color: #4a90e2;
-  color: #fff;
+  padding: 13px;
+  background: linear-gradient(to right, #2563eb, #1d4ed8);
+  color: white;
   font-size: 16px;
   font-weight: 600;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  margin-top: 15px;
+  transition: all 0.3s ease;
+  margin-top: 12px;
 }
 
 button:hover {
-  background-color: #357ABD;
+  background: linear-gradient(to right, #1d4ed8, #1e40af);
   transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
 }
 
 
@@ -71,5 +83,26 @@ button:hover {
   margin-top: 15px;
   font-size: 15px;
   font-weight: 500;
-  text-align: center; 
+  text-align: center;
+}
+
+
+.success {
+  color: #166534;
+}
+
+.error {
+  color: #991b1b;
+}
+
+
+@media (max-width: 420px) {
+  form#astroForm {
+    width: 92%;
+    padding: 22px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
 }
