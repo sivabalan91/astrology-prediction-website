@@ -12,10 +12,10 @@ Groq AI, and delivers the results to the user's email.
 ## Live Demo
 
 **GitHub Pages URL:**\
-https://your-username.github.io/astro-prediction
+
 
 **GitHub Repository:**\
-https://github.com/your-username/astro-prediction
+https://github.com/sivabalan91/astrology-prediction-website.git
 
 ------------------------------------------------------------------------
 
