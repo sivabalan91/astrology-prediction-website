@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Astrology Prediction</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h2>Astrology Prediction Form</h2>
+
+  <form id="astroForm">
+
+    <input id="Name" placeholder="Full Name" required />
+    <input id="dob" type="date" required />
+    <input id="tob" type="time" />
+    <input id="pob" placeholder="Place of Birth" required />
+    
+ <label for="gender">Gender</label>
+<select id="gender" name="gender">
+  <option value="Male">Male</option>
+  <option value="Female">Female</option>
+  <option value="Other">Other</option>
+</select>
+
+<label for="focus">Focus Area</label>
+<select id="Focus" name="focus">
+  <option value="Career">Career</option>
+  <option value="Health">Health</option>
+  <option value="Relationships">Relationships</option>
+  <option value="Education">Education</option>
+</select>
+
+
+    <input id="email" type="email" placeholder="Enter Your Eamil" required />
+
+    <button type="submit">Get Prediction</button>
+  </form>
+
+ 
+  <div id="message" style="margin-top: 10px; color: green;"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
