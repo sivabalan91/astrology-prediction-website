@@ -14,7 +14,7 @@ document.getElementById("astroForm").addEventListener("submit", async (e) => {
     const messageDiv = document.getElementById("message");
 
     try {
-        const res = await fetch("http://localhost:5678/webhook-test/Astro", {
+        const res = await fetch("http://localhost:5678/webhook/Astro", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data)
